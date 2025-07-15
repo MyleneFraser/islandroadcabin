@@ -135,6 +135,22 @@
       object-fit: cover;
     }
 
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 80px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      z-index: 10;
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
     .hosts-photo {
       width: 200px;
       height: 200px;
@@ -212,6 +228,12 @@
       .tagline-text {
         font-size: 2.2rem;
       }
+
+      .logo {
+        width: 60px;
+        top: 15px;
+        right: 15px;
+      }
     }
   </style>
 </head>
@@ -219,6 +241,7 @@
 
   <!-- Hero Section -->
   <section class="hero-section">
+    <img src="static/irc_logo.jpg" alt="Island Road Cabin Logo" class="logo">
     <div class="hero-content">
       <h1>Island Road Cabin</h1>
       <p class="lead">Peaceful retreat on Nova Scotia's warm North Shore</p>
